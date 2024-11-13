@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subscribe Survey Form</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <section>
+            <h1 id="title">Subscribe Survey Form</h1>
+            <p id="description">Thank you for choosing to subscribe to our data center. We will inform you about any type of information to your choosing.</p>
+            <p id="description"> We would also like to know about how you've heard of us and we will appreciate any feedback, if you'll have the extra time!</p>
+            <form id="survey-form">
+                <fieldset class="personal-info">
+                    <legend>Personal information</legend>
+                    <label class="name" for="name" id="name-label">
+                        Name
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </label>
+                    <label class="email" for="email" id="email-label">
+                       Email
+                       <input type="email" id="email" placeholder="Enter your Email" required> 
+                    </label>
+                    <label class="age" for="number" id="number-label">
+                        Age (optional)
+                        <input type="number" id="number" min="10" max="99" placeholder="Age">
+                    </label>
+                </fieldset>
+                <fieldset class="info-choice">
+                    <legend>What type of information would you like to recieve?</legend>
+                    <label for="dropdown">
+                        <select name="dropdown" id="dropdown">
+                            <option value="">(Please choose a topic)</option>
+                            <option value="1">Mathematics</option>
+                            <option value="2">Science</option>
+                            <option value="3">History</option>
+                            <option value="4">Neurology</option>
+                            <option value="5">Design</option>
+                            <option value="6">Philosophy</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="feedback">
+                    <legend>Feedback (optional)</legend>
+                    <div class="recommendation">
+                        Would you recommend our application to a friend?
+                        <label for="definitely">
+                            <input value="0" type="radio" name="recommendation" id="definitely"/> Definitely
+                        </label>
+                        <label for="not-sure">
+                            <input value="1" type="radio" name="recommendation" id="not-sure"/> Not sure
+                        </label>
+                        <label for="no">
+                            <input value="2" type="radio" name="recommendation" id="no"/> I don't think so
+                        </label>
+                    </div>
+                    <div class="improvement">
+                        What would you like to see improved?
+                        <label for="more_data_topics"><input value="data" type="checkbox" id="more_data_topics"/>More data topics</label>
+                        <label for="accessibility"><input value="accessibility" type="checkbox" id="accessibility"/>Accessibility</label>
+                        <label for="responsiveness"><input value="responsiveness" type="checkbox" id="responsiveness"/>Responsiveness</label>
+                        <label for="making_data_clear"><input value="make-clearer" type="checkbox" id="making_data_clear"/>Making the data more clear</label>
+                        <label for="interactivity"><input value="interactivity" type="checkbox" id="interactivity"/>Interactivity</label>
+                    </div>
+                    <div class="comments">
+                        Any comments or suggestions?
+                        <label for="comments">
+                            <textarea id="comments" placeholder="Let us know"></textarea>
+                        </label>
+                    </div>
+                </fieldset>
+                <input id="submit" class="submit" type="submit"/>
+            </form>
+        </section>
+    </body>
+</html>
